@@ -1,0 +1,56 @@
+h1 {
+    font-weight: bolder;
+}
+
+/*Carousel de REACT*/
+.carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto; /* Para centrarlo */
+}
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 50vh; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) {
+    .carousel-container {
+        height: 70vh; /* Altura para pantallas grandes */
+    }
+}
+
+/* Clase base para la imagen del carrusel */
+.carousel-image {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 300px; /* Altura predeterminada para pantallas pequeñas */
+    object-fit: cover; 
+  }
+  
+  /* Pantallas pequeñas (hasta 576px) */
+  @media (min-width: 576px) {
+    .carousel-image {
+      height: 200px; 
+    }
+  }
+  
+  /* Pantallas medianas (hasta 768px) */
+  @media (min-width: 768px) {
+    .carousel-image {
+      height: 300px; 
+    }
+  }
+  
+  /* Pantallas grandes (hasta 992px) */
+  @media (min-width: 992px) {
+    .carousel-image {
+      height: 400px; 
+    }
+  }
+  
+  /* Pantallas extra grandes (1200px y más) */
+  @media (min-width: 1200px) {
+    .carousel-image {
+      height: 500px; 
+    }
+  }
